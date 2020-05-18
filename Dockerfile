@@ -1,4 +1,4 @@
-FROM budtmo/docker-android-x86-9.0
+FROM budtmo/docker-android-x86-9.0:latest
 
 ENV NODEJS_VERSION=10.16.3 \
     PATH=$PATH:/opt/node/bin
@@ -11,4 +11,3 @@ RUN apt-get update && apt-get install -y curl git ca-certificates --no-install-r
     apt-get clean
 
 RUN npm install -g npm
-
